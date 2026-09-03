@@ -1,121 +1,97 @@
-The project focuses on identifying how automobile sales change during recession and non-recession periods by examining factors such as:
+# 🚗 Automobile Recession Analysis
 
-Automobile sales
+> Exploring how economic recessions affect automobile sales using Python, Pandas, Matplotlib, and Seaborn.
 
-GDP
+---
 
-Consumer confidence
+## 📌 Project Overview
 
-Unemployment rate
+This project analyzes historical automobile sales data to understand how recession periods influence vehicle demand and related economic factors.
 
-Advertising expenditure
+The analysis focuses on comparing **recession vs. non-recession periods** and visualizing how automobile sales respond to changes in:
 
-Vehicle price
+- GDP
+- Consumer confidence
+- Unemployment
+- Vehicle prices
+- Advertising expenditure
+- Vehicle type
+- Seasonality
 
-Vehicle type
+The dataset used in this project is **synthetic** and was created for educational purposes.
 
-Seasonality
+---
 
-Visualizations
+## 🎯 Project Goals
 
-The notebook includes the following analyses:
+The main objectives of this project are to:
 
-Yearly Automobile Sales
-Examines how average automobile sales changed over time and highlights major recession periods.
+- Analyze how automobile sales change over time
+- Compare sales performance during recession and non-recession periods
+- Identify which vehicle types are most affected by recessions
+- Examine the relationship between economic conditions and automobile sales
+- Visualize how advertising, seasonality, pricing, and unemployment influence sales
+- Present findings through clear and interpretable charts
 
-Advertising Expenditure vs. Automobile Sales
-Compares advertising spending and automobile sales during non-recession periods.
+---
 
-Vehicle Sales During Recession vs. Non-Recession
-Compares average automobile sales across different vehicle types.
+## 📊 Analysis & Visualizations
 
-GDP During Recession vs. Non-Recession
-Uses subplots to compare GDP trends across recession and normal economic periods.
+| Task | Analysis | Visualization |
+|---|---|---|
+| **1.1** | Yearly automobile sales trends | Line Chart |
+| **1.2** | Advertising expenditure vs. automobile sales | Line Chart |
+| **1.3** | Vehicle sales during recession vs. non-recession periods | Bar Chart |
+| **1.4** | GDP variation during recession and non-recession periods | Subplots / Line Charts |
+| **1.5** | Impact of seasonality on automobile sales | Bubble Plot |
+| **1.6** | Consumer confidence and vehicle price vs. sales | Scatter Plots |
+| **1.7** | Advertising expenditure by economic period | Pie Chart |
+| **1.8** | Advertising expenditure by vehicle type during recessions | Pie Chart |
+| **1.9** | Unemployment rate, vehicle type, and automobile sales | Line Plot |
 
-Seasonality and Automobile Sales
-Uses a bubble plot to examine the relationship between monthly seasonality and sales.
+---
 
-Consumer Confidence and Vehicle Price
-Uses scatter plots to examine how consumer confidence and vehicle prices relate to automobile sales during recessions.
+## 🔍 Key Insights
 
-Advertising Expenditure by Economic Period
-Uses a pie chart to compare advertising spending during recession and non-recession periods.
+### 📉 Recession Impact
+Automobile sales generally decline during recession periods, showing the strong influence of broader economic conditions on consumer demand.
 
-Advertising Expenditure by Vehicle Type
-Shows how advertising expenditure was distributed among vehicle categories during recessions.
+### 💼 Unemployment
+Higher unemployment rates are generally associated with lower automobile sales, especially during recession periods.
 
-Unemployment Rate and Automobile Sales
-Analyzes the relationship between unemployment rates, vehicle types, and automobile sales during recession periods.
+### 🧠 Consumer Confidence
+Higher consumer confidence tends to correspond with stronger automobile sales because consumers are more willing to make large purchases when economic expectations improve.
 
-Key Insights
+### 💰 Vehicle Pricing
+During recessions, consumers become more price-sensitive, which can reduce demand for higher-priced vehicles.
 
-Automobile sales generally decline during recession periods.
+### 📢 Advertising
+Advertising expenditure is lower during recession periods compared with non-recession periods, indicating reduced marketing spending during economic downturns.
 
-Consumer confidence is positively associated with automobile sales.
+### 🚘 Vehicle Type
+Different vehicle categories respond differently to recessions, with more affordable vehicle types generally maintaining stronger demand.
 
-Higher unemployment rates tend to correspond with lower vehicle sales.
+### 📅 Seasonality
+Monthly sales patterns show that seasonality also plays an important role in automobile demand.
 
-Advertising expenditure is substantially lower during recession periods.
+---
 
-Vehicle type influences how strongly sales are affected during economic downturns.
+## 🛠️ Technologies Used
 
-Seasonal patterns contribute to noticeable month-to-month differences in automobile sales.
+| Technology | Purpose |
+|---|---|
+| **Python** | Data analysis and visualization |
+| **Pandas** | Data cleaning, filtering, grouping, and aggregation |
+| **Matplotlib** | Line charts, scatter plots, pie charts, and subplots |
+| **Seaborn** | Statistical visualizations and grouped comparisons |
+| **Jupyter Notebook** | Interactive analysis environment |
 
-Technologies Used
+---
 
-Python
+## 📂 Repository Structure
 
-Pandas
-
-Matplotlib
-
-Seaborn
-
-Jupyter Notebook
-
-Repository Structure
-
+```text
 automobile-recession-analysis/
 │
 ├── DV0101EN-Final-Assign-Part1-v1.jupyterlite.ipynb
 └── README.md
-
-Dataset
-
-The dataset contains monthly automobile sales observations along with economic and market-related variables.
-
-Key columns include:
-
-Date
-
-Recession
-
-Automobile_Sales
-
-GDP
-
-Unemployment_Rate
-
-Consumer_Confidence
-
-Seasonality_Weight
-
-Price
-
-Advertising_Expenditure
-
-Vehicle_Type
-
-Month
-
-Year
-
-The dataset is artificially generated for educational purposes and does not represent real automobile sales data.
-
-
-Author
-
-Vidur Bhardwaj
-
-Behavioral and Social Data Science
-The University of Texas at Austin
