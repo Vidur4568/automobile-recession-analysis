@@ -1,47 +1,43 @@
-# 🚗 Automobile Recession Analysis
+# Automobile Recession Analysis & Dashboard
 
-> Exploring how economic recessions affect automobile sales using Python, Pandas, Matplotlib, and Seaborn.
+## Project Overview
 
----
+This project analyzes how recession periods affect automobile sales using a synthetic automobile sales dataset.
 
-## 📌 Project Overview
+The project is divided into two parts:
 
-This project analyzes historical automobile sales data to understand how recession periods influence vehicle demand and related economic factors.
+- **Part 1:** Exploratory analysis and static visualizations using Pandas, Matplotlib, and Seaborn
+- **Part 2:** Interactive dashboard development using Plotly and Dash
 
-The analysis focuses on comparing **recession vs. non-recession periods** and visualizing how automobile sales respond to changes in:
+The goal is to turn automobile sales and economic indicators into clear, business-oriented insights.
 
+## Project Objectives
+
+The analysis focuses on understanding how automobile sales are influenced by:
+
+- Recession periods
 - GDP
 - Consumer confidence
-- Unemployment
+- Unemployment rate
 - Vehicle prices
 - Advertising expenditure
 - Vehicle type
 - Seasonality
 
-The dataset used in this project is **synthetic** and was created for educational purposes.
+The dashboard allows users to switch between:
 
----
+- **Yearly Statistics**
+- **Recession Period Statistics**
 
-## 🎯 Project Goals
+and interactively review multiple automobile sales visualizations.
 
-The main objectives of this project are to:
-
-- Analyze how automobile sales change over time
-- Compare sales performance during recession and non-recession periods
-- Identify which vehicle types are most affected by recessions
-- Examine the relationship between economic conditions and automobile sales
-- Visualize how advertising, seasonality, pricing, and unemployment influence sales
-- Present findings through clear and interpretable charts
-
----
-
-## 📊 Analysis & Visualizations
+## Part 1 — Data Analysis & Visualization
 
 | Task | Analysis | Visualization |
 |---|---|---|
 | **1.1** | Yearly automobile sales trends | Line Chart |
 | **1.2** | Advertising expenditure vs. automobile sales | Line Chart |
-| **1.3** | Vehicle sales during recession vs. non-recession periods | Bar Chart |
+| **1.3** | Vehicle sales during recession vs. non-recession periods | Grouped Bar Chart |
 | **1.4** | GDP variation during recession and non-recession periods | Subplots / Line Charts |
 | **1.5** | Impact of seasonality on automobile sales | Bubble Plot |
 | **1.6** | Consumer confidence and vehicle price vs. sales | Scatter Plots |
@@ -49,49 +45,61 @@ The main objectives of this project are to:
 | **1.8** | Advertising expenditure by vehicle type during recessions | Pie Chart |
 | **1.9** | Unemployment rate, vehicle type, and automobile sales | Line Plot |
 
----
+## Part 2 — Interactive Dashboard
 
-## 🔍 Key Insights
+The interactive Dash application includes two report types.
 
-### 📉 Recession Impact
-Automobile sales generally decline during recession periods, showing the strong influence of broader economic conditions on consumer demand.
+### Recession Period Statistics
 
-### 💼 Unemployment
-Higher unemployment rates are generally associated with lower automobile sales, especially during recession periods.
+- Average automobile sales during recession years
+- Average automobile sales by vehicle type
+- Advertising expenditure by vehicle type
+- Effect of unemployment rate on automobile sales
 
-### 🧠 Consumer Confidence
-Higher consumer confidence tends to correspond with stronger automobile sales because consumers are more willing to make large purchases when economic expectations improve.
+### Yearly Statistics
 
-### 💰 Vehicle Pricing
-During recessions, consumers become more price-sensitive, which can reduce demand for higher-priced vehicles.
+- Yearly automobile sales for the full period
+- Monthly automobile sales for a selected year
+- Average vehicle sales by vehicle type for a selected year
+- Advertising expenditure by vehicle type for a selected year
 
-### 📢 Advertising
-Advertising expenditure is lower during recession periods compared with non-recession periods, indicating reduced marketing spending during economic downturns.
+The dashboard also includes:
 
-### 🚘 Vehicle Type
-Different vehicle categories respond differently to recessions, with more affordable vehicle types generally maintaining stronger demand.
+- Report-type dropdown
+- Year-selection dropdown
+- Dynamic callbacks
+- Interactive Plotly charts
 
-### 📅 Seasonality
-Monthly sales patterns show that seasonality also plays an important role in automobile demand.
+## Key Insights
 
----
+- Automobile sales generally decline during recession periods.
+- Higher unemployment rates are generally associated with lower automobile sales.
+- Higher consumer confidence tends to correspond with stronger automobile sales.
+- Consumers become more price-sensitive during recessions, which can reduce demand for higher-priced vehicles.
+- Advertising expenditure is lower during recession periods compared with non-recession periods.
+- Vehicle categories respond differently to recessions, with smaller and more affordable vehicles tending to maintain stronger demand.
+- Monthly sales patterns show clear seasonal variation.
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 | Technology | Purpose |
 |---|---|
-| **Python** | Data analysis and visualization |
+| **Python** | Core analysis and application development |
 | **Pandas** | Data cleaning, filtering, grouping, and aggregation |
-| **Matplotlib** | Line charts, scatter plots, pie charts, and subplots |
-| **Seaborn** | Statistical visualizations and grouped comparisons |
-| **Jupyter Notebook** | Interactive analysis environment |
+| **Matplotlib** | Static visualizations |
+| **Seaborn** | Statistical and grouped visualizations |
+| **Plotly Express** | Interactive charts |
+| **Dash** | Interactive dashboard application |
+| **Jupyter Notebook** | Analysis and dashboard development environment |
+| **Git / GitHub** | Version control and project hosting |
 
----
-
-## 📂 Repository Structure
+## Repository Structure
 
 ```text
 automobile-recession-analysis/
 │
 ├── DV0101EN-Final-Assign-Part1-v1.jupyterlite.ipynb
+├── Part_2_Create_Dashboard.ipynb
+├── Part_2_Create_Dashboard.py
+├── automobile_sales.csv
 └── README.md
